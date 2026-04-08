@@ -1,0 +1,16 @@
+:root {
+  --color-primario: #ff6347;
+  --color-fondo: #f0f0f0;
+  --color-texto: #333;
+  --color-blanco: #fff;
+  --color-borde: #ddd;
+  --color-focus: #ff4500;
+  --sombra-suave: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --sombra-fuerte: 0 8px 16px rgba(0, 0, 0, 0.2);
+  --fuente-principal: "Arial", Helvetica, sans-serif;
+  --f-size-titulo: 2.4rem;
+  --f-size-subtitulo: 1.6rem;
+  --f-size-texto: 1.2rem;
+  --f-size-precio: 1.8rem;
+  --transicion: all .3s ease;
+}

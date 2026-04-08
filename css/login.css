@@ -1,17 +1,8 @@
-:root {
-  --color-primario: #ff6347;
-  --color-fondo: #f0f0f0;
-  --color-texto: #333;
-  --color-blanco: #fff;
-  --color-borde: #ddd;
-  --color-focus: #ff4500;
-}
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fuente-principal);
 }
 
 html{
@@ -33,56 +24,57 @@ body{
     display: flex;
     flex-direction: column;
     background-color: var(--color-blanco);
-    padding: 35px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    min-width: 300px;
-    margin: 20px;
+    padding: 3.5rem;
+    border-radius: 0.8rem;
+    box-shadow: var(--sombra-suave);
+    width: 90%;
+    max-width: 30rem;
+    margin: 2rem auto;
     border: 1px solid var(--color-borde);
 }
 
 .login-form h1{
     text-transform: uppercase;
-    font-size: 2.4rem;
+    font-size: var(--f-size-titulo);
     color: var(--color-primario);
     text-align: center;
     letter-spacing: 0.1em;
-    margin-bottom: 5px;
+    margin-bottom: .5rem;
 }
 
 .login-form h2{
     color: var(--color-texto);
     text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
+    font-size: var(--f-size-base);
+    margin-bottom: 2rem;
 }
 
 label{
-    font-size: 1.2rem;
+    font-size: var(--f-size-texto);
     font-weight: bold;
 }
 
 input{
-    padding: 5px;
-    margin-bottom: 15px;
+    padding: .5rem;
+    margin-bottom: 1.5rem;
     width: 100%;
     border: 1px solid var(--color-borde);
+    transition: var(--transicion);
 }
 
 input:focus{
     border-color: var(--color-focus);
     outline: none;
-    transition: .3s ease;
 }
 
 .btn{
     background-color: var(--color-primario);
-    color: white;
+    color: var(--color-blanco);
     border: none;
-    padding: 10px 15px;
-    border-radius: 2px;
+    padding: 1rem 1.5rem;
+    border-radius: .2rem;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: var(--transicion);
 }
 
 .btn:hover{
@@ -91,7 +83,7 @@ input:focus{
 
 p{
     font-size: 1rem;
-    margin-top: 20px;
+    margin-top: 2rem;
     text-align: center;
     color: var(--color-texto)
 }
