@@ -1,3 +1,6 @@
+const btnMenu = document.querySelector(".header__menu-btn");
+const nav = document.querySelector(".nav");
+
 const cargarCategorias = () => {
   const lista = document.getElementById("lista-categorias");
   categorias.forEach((categoria) => {
@@ -30,6 +33,10 @@ const cargarProductos = () => {
     contProductos.appendChild(article);
   });
 };
+
+btnMenu.addEventListener("click", () => {
+  nav.classList.toggle("nav--show")
+});
 
 cargarCategorias();
 cargarProductos();
